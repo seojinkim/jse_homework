@@ -30,6 +30,6 @@ public class MonthEndDay {
 			System.out.println("잘못된 입력(1~12를 벗어난 입력)");
 			break;
 		}
-		System.out.println("끝나는 날은 " + result +"입니다.");
+		System.out.println("끝나는 날은 " + result + "입니다.");
 	}
 }
