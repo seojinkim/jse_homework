@@ -12,6 +12,24 @@ public class MonthEndDay {
 	 * */
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
+		System.out.println("월을 입력하면 해당 월의 끝날이 몇일인지 출력하는 프로그램");
+		System.out.println("월을 입력하세요:");
 		int month = scanner.nextInt();
+		int result = 0;
+		switch (month) {
+		case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+			result = 31;
+			break;
+		case 2:
+			result = 29;
+			break;
+		case 4: case 6: case 9: case 11:
+			result = 30;
+			break;
+		default:
+			System.out.println("잘못된 입력(1~12를 벗어난 입력)");
+			break;
+		}
+		System.out.println("끝나는 날은 " + result +"입니다.");
 	}
 }
